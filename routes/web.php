@@ -14,9 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/home', function () {
+    return view('home');
+});
 
 // Route::get('quran',[QuranController::class, 'index'])->name('quran');
 Route::get('/',[QuranController::class,'index'])->name('/');
